@@ -160,13 +160,34 @@
   html .app .content #bottomblock, body .app .content #bottomblock {
     position: fixed;
     bottom: 0;
-    background-color: rebeccapurple;
+    background-color: rgba(255, 255, 255, 0.65);
     height: 120px;
     width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60px 60px;
+        grid-template-rows: 60px 60px;
+    -ms-grid-columns: 72px 104px 73px 40px 71px;
+        grid-template-columns: 72px 104px 73px 40px 71px;
+  }
+  html .app .content #bottomblock div, body .app .content #bottomblock div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .app .content #bottomblock #specialtransport, body .app .content #bottomblock #specialtransport {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   html .app .content #logobottom, body .app .content #logobottom {
     position: fixed;
-    bottom: 85px;
+    bottom: 90px;
   }
 }
 
