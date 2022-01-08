@@ -1,0 +1,33 @@
+@media only screen and (max-width: 360px){
+    .error{
+        display: none;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        .app{
+            display: block;
+            width: 100%;
+            height: 100%;
+            .map{
+                width: 100%;
+                height: 100%;
+                background-image: url('/img/map.jpg');
+                // background-color: red;
+            }
+            .content{
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 361px){
+    .app{
+        display: none;
+    }
+    .error{
+        display: block;
+    }
+}
