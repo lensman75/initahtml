@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
+    font-family: Calibri;
   }
   html .app, body .app {
     display: block;
@@ -30,7 +31,131 @@
     margin: 50px 8px 0 8px;
     padding: 0;
     height: 94px;
-    background-color: aqua;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 32px 304px;
+        grid-template-columns: 32px 304px;
+    -ms-grid-rows: 45px 45px;
+        grid-template-rows: 45px 45px;
+    row-gap: 4px;
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
+        grid-template-areas: "menu row1" "arrows row2";
+  }
+  html .app .content #topblock #toblockmenu, body .app .content #topblock #toblockmenu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: menu;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  html .app .content #topblock #toblockrowfirst, body .app .content #topblock #toblockrowfirst {
+    font-size: 20px;
+    font-weight: bolder;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: row1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 37px 226px 41px;
+        grid-template-columns: 37px 226px 41px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+  html .app .content #topblock #toblockrowfirst p, body .app .content #topblock #toblockrowfirst p {
+    margin: 0;
+  }
+  html .app .content #topblock #toblockrowfirst #redmarker, body .app .content #topblock #toblockrowfirst #redmarker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .app .content #topblock #toblockrowfirst #mypositiontext, body .app .content #topblock #toblockrowfirst #mypositiontext {
+    padding-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .app .content #topblock #toblockrowfirst #pointingsymbol, body .app .content #topblock #toblockrowfirst #pointingsymbol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .app .content #topblock #toblockarrows, body .app .content #topblock #toblockarrows {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: arrows;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  html .app .content #topblock #toblockrowsecond, body .app .content #topblock #toblockrowsecond {
+    font-size: 20px;
+    font-weight: bolder;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: row2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 37px 226px 41px;
+        grid-template-columns: 37px 226px 41px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+  html .app .content #topblock #toblockrowsecond p, body .app .content #topblock #toblockrowsecond p {
+    margin: 0;
+  }
+  html .app .content #topblock #toblockrowsecond #greenmarker, body .app .content #topblock #toblockrowsecond #greenmarker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .app .content #topblock #toblockrowsecond #destinationtext, body .app .content #topblock #toblockrowsecond #destinationtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5px;
   }
   html .app .content #bottomblock, body .app .content #bottomblock {
     position: fixed;

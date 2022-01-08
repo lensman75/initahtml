@@ -6,6 +6,7 @@
         width: 100%;
         height: 100%;
         margin: 0;
+        font-family: Calibri;
         .app{
             display: block;
             width: 100%;
@@ -27,7 +28,78 @@
                     margin: 50px 8px 0 8px;
                     padding: 0;
                     height: 94px;
-                    background-color: aqua;
+                    // background-color: aqua;
+                    display: grid;
+                    grid-template-columns: 32px 304px;
+                    grid-template-rows: 45px 45px;
+                    row-gap: 4px;
+                    column-gap: 8px;
+                    grid-template-areas:
+                    "menu row1"
+                    "arrows row2";
+                    #toblockmenu{
+                        grid-area: menu;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                    }
+                    #toblockrowfirst{
+                        font-size: 20px;
+                        font-weight: bolder;
+                        grid-area: row1;
+                        display: grid;
+                        grid-template-columns: 37px 226px 41px;
+                        p{
+                            margin: 0;
+                        }
+                        background-color: #fff;
+                        border-radius: 7px;
+                        #redmarker{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        #mypositiontext{
+                            padding-left: 5px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        #pointingsymbol{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+                    }
+                    #toblockarrows{
+                        grid-area: arrows;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                    }
+                    #toblockrowsecond{
+                        font-size: 20px;
+                        font-weight: bolder;
+                        grid-area: row2;
+                        display: grid;
+                        grid-template-columns: 37px 226px 41px;
+                        p{
+                            margin: 0;
+                        }
+                        background-color: #fff;
+                        border-radius: 7px;
+                        #greenmarker{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        #destinationtext{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 5px;
+                        }
+                    }
                 }
                 #bottomblock{
                     position: fixed;
