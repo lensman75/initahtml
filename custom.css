@@ -11,11 +11,37 @@
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
   }
   html .app .map, body .app .map {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     background-image: url("/img/map.jpg");
+    position: absolute;
+  }
+  html .app .content, body .app .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  html .app .content #topblock, body .app .content #topblock {
+    margin: 50px 8px 0 8px;
+    padding: 0;
+    height: 94px;
+    background-color: aqua;
+  }
+  html .app .content #bottomblock, body .app .content #bottomblock {
+    position: fixed;
+    bottom: 0;
+    background-color: rebeccapurple;
+    height: 120px;
+    width: 100%;
+  }
+  html .app .content #logobottom, body .app .content #logobottom {
+    position: fixed;
+    bottom: 85px;
   }
 }
 
